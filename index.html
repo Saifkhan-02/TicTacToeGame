@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="GameCss.css">
 
-    
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-         // Tailwind CSS configuration
-         // This script sets up the Tailwind CSS configuration for responsive design and custom colors.
-         // It defines breakpoints for different screen sizes and extends the default theme with custom colors.
-       tailwind.config = {
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind CSS configuration
+        // This script sets up the Tailwind CSS configuration for responsive design and custom colors.
+        // It defines breakpoints for different screen sizes and extends the default theme with custom colors.
+        tailwind.config = {
             theme: {
                 screens: {
                     'sm': '567px',
@@ -32,41 +33,46 @@
                 },
                 extend: {
                     screens: {
-                        'xs': {'min':'320px', 'max':'567px'},
+                        'xs': { 'min': '320px', 'max': '567px' },
                         // => @media (min-width: 992px) { ... }
-                    }, 
+                    },
                 },
             }
         }
     </script>
 
 </head>
-<body   class="xs:text-center sm:text-center lg:text-center py-5 lg:py-10" > 
-   <div class="msg-container hide">
-    <p id="msg">Winner</p><br>
-    <button id="newbtn" >New Game</button>
 
-  </div>
-  <main class="sm:text-center text-center  py-5 lg:py-10">
-     <h1 class="sm:text-[50px] text-[30px] underline text-shadow ">Tic Tac Toe</h1>
-    <div class="w-[100%] flex justify-center   sm:mt-[25px] mt-[15px]">
-     <div class="game w-[60vmin] h-[60vmin] flex flex-wrap sm:gap-[12px] gap-[10px]">
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
-     </div>
-   </div>
+<body class="xs:text-center sm:text-center lg:text-center py-5 lg:py-10">
+    <div class="msg-container hide sm:h-[900px] h-[500px] ">
+        <p id="msg" class="sm:text-[50px] text-[23px]">Winner</p><br>
+        <button id="newbtn">New Game</button>
 
-   <button id="reset-button" class="mt-[23px] sm:p-[10px] p-[8px] sm:text-[20px] text-[12px] bg-[#191913] text-[white] font-bold border-[none] rounded-[15px]" >Reset Button</button>
-  </main>
- 
-  <script src="script.js"></script>
+    </div>
+    <div >
+        <main class="sm:text-center text-center  py-5 sm:py-10 sm:mt-[12px] mt-[40px]">
+            <h1 class="sm:text-[50px] text-[30px] underline text-shadow ">Tic Tac Toe</h1>
+            <div class="w-[100%] flex justify-center   sm:mt-[25px] mt-[15px]">
+                <div class="game w-[60vmin] h-[60vmin] flex flex-wrap sm:gap-[12px] gap-[10px]">
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                    <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+                </div>
+            </div>
+
+            <button id="reset-button"
+                class="mt-[23px] sm:p-[10px] p-[8px] sm:text-[20px] text-[12px] bg-[#191913] text-[white] font-bold border-[none] rounded-[15px]">Reset
+                Button</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

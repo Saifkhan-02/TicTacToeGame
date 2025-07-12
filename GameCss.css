@@ -47,9 +47,9 @@ body{
 #newbtn{
     padding: 10px;
     font-size: 15px;
-    background-color: #191913;
+    background-color:black ;
     color: white;
-    box-shadow: 3px 3px 5px red,-3px -3px 5px blue;
+    box-shadow: 2px 2px 2px 3px red,-2px -2px 2px 3px blue;
     border-radius: 15px;
     border: none;
 }
@@ -58,13 +58,22 @@ body{
                 to{left: 400px}
 
             }
+@media screen and (max-width:640px){
+    @keyframes move {
+        from{left:-50px;}
+        to{left:120px;}
+        
+    }
+    
+}
+
 
 #msg{
     color: whitesmoke;
-    font-size: 50px;
+   
     position: relative;
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     display: flex;
@@ -73,8 +82,8 @@ body{
 
 
 .msg-container{
-    height: 900px;
-     display: flex;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
