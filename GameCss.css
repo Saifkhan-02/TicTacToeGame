@@ -1,8 +1,7 @@
 h1{
-    font-size: 50px;
-    text-shadow: 2px 2px 5px red;
-    text-decoration: underline;
-    text-decoration-thickness: 8px ;
+    
+    text-shadow: 2px 2px 4px red,-2px -2px 4px blue;
+    text-decoration-thickness: 6px ;
 
 }
 *{
@@ -21,7 +20,7 @@ body{
    
 
 }
-.game{
+/* .game{
     width: 60vmin;
     height: 60vmin;
     display: flex;
@@ -30,25 +29,20 @@ body{
     align-items: center;
     gap: 1.5vmin;
 
-}
+} */
 .box{
     height: 18vmin;
     width: 18vmin;
     border-radius: 20px ;
     border: none;    
     box-shadow: 0px 0px 10px 1px blue;
-    font-size: 8vmin ;
+    /* font-size: 8vmin ; */
     color:  red;
     background-color:black ;
 }
 #reset-button{
-    padding: 10px;
-    font-size: 20px;
-    background-color: #191913;
-    color: white;
+   
     box-shadow: 3px 3px 5px red,-3px -3px 5px blue;
-    border-radius: 15px;
-    border: none;
 }
 #newbtn{
     padding: 10px;

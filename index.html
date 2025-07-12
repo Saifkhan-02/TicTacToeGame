@@ -34,10 +34,7 @@
                     screens: {
                         'xs': {'min':'320px', 'max':'567px'},
                         // => @media (min-width: 992px) { ... }
-                    },
-                    colors: {
-                        wscolor: '#2699fb',
-                    },
+                    }, 
                 },
             }
         }
@@ -50,23 +47,23 @@
     <button id="newbtn" >New Game</button>
 
   </div>
-  <main class="xs:text-center sm:text-center lg:text-center py-5 lg:py-10">
-     <h1>Tic Tac Toe</h1>
-    <div class="container">
-     <div class="game">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
+  <main class="sm:text-center text-center  py-5 lg:py-10">
+     <h1 class="sm:text-[50px] text-[30px] underline text-shadow ">Tic Tac Toe</h1>
+    <div class="w-[100%] flex justify-center   sm:mt-[25px] mt-[15px]">
+     <div class="game w-[60vmin] h-[60vmin] flex flex-wrap sm:gap-[12px] gap-[10px]">
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
+        <button class="box  sm:text-[8vmin] text-[9vmin]"></button>
      </div>
    </div>
 
-   <button id="reset-button"  >Reset Button</button>
+   <button id="reset-button" class="mt-[23px] sm:p-[10px] p-[8px] sm:text-[20px] text-[12px] bg-[#191913] text-[white] font-bold border-[none] rounded-[15px]" >Reset Button</button>
   </main>
  
   <script src="script.js"></script>
